@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7F4FA"
+    android:orientation="vertical"
+    tools:context=".verfiyphone">
+
+
+    <ImageView
+        android:id="@+id/backtoregisterbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/arrow_back_blue" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Verify your phone number"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#0D5995"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="We've sent a code to "
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+92 333 1234567"
+                    android:textSize="15dp"
+                    android:textColor="#0D5995"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/inputA"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:background="@drawable/edittextcircle">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/inputB"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/edittextcircle">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/inputC"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/edittextcircle">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/inputD"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/edittextcircle">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/inputE"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/edittextcircle">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/inputF"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/edittextcircle">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/verifybtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:text="Verify"
+                android:textColor="#0D5995">
+
+            </Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Send code again "
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="00:20"
+                    android:textSize="15dp"
+                    android:textColor="#0D5995"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:background="#93DDFF">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/oneButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:text="1"
+                        android:textSize="45sp"
+                        android:textColor="#93DDFF"
+                        android:textAlignment="center"
+                        app:cornerRadius="10dp">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/twoButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="2"
+                        android:textSize="45sp"
+                        android:textColor="#93DDFF"
+                        app:cornerRadius="10dp"
+                        android:textAlignment="center">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/threeButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentEnd="true"
+                        android:text="3"
+                        android:textSize="45sp"
+                        android:textColor="#93DDFF"
+                        app:cornerRadius="10dp"
+                        android:textAlignment="center">
+                    </Button>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/fourButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:text="4"
+                        android:textSize="45sp"
+                        android:textColor="#93DDFF"
+                        app:cornerRadius="10dp"
+                        android:textAlignment="center">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/fiveButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="5"
+                        android:textSize="45sp"
+                        android:textColor="#93DDFF"
+                        app:cornerRadius="10dp"
+                        android:textAlignment="center">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/sixButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentEnd="true"
+                        android:text="6"
+                        android:textSize="45sp"
+                        android:textColor="#93DDFF"
+                        app:cornerRadius="10dp"
+                        android:textAlignment="center">
+                    </Button>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/sevenButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:text="7"
+                        android:textSize="45sp"
+                        android:textColor="#93DDFF"
+                        app:cornerRadius="10dp"
+                        android:textAlignment="center">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/eightButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="8"
+                        android:textSize="45sp"
+                        android:textColor="#93DDFF"
+                        app:cornerRadius="10dp"
+                        android:textAlignment="center">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/nineButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentEnd="true"
+                        android:text="9"
+                        android:textSize="45sp"
+                        android:textColor="#93DDFF"
+                        app:cornerRadius="10dp"
+                        android:textAlignment="center">
+                    </Button>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/zeroButton"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="0"
+                        android:textSize="45sp"
+                        android:textColor="#93DDFF"
+                        app:cornerRadius="10dp"
+                        android:textAlignment="center">
+                    </Button>
+
+
+                    <ImageView
+                        android:id="@+id/backspace"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/baseline_backspace_24" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

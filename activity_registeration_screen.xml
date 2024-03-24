@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7F4FA"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="-100dp"
+                    android:layout_marginTop="-50dp"
+                    android:alpha="0.5"
+                    android:src="@drawable/blue_circle" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="-100dp"
+                    android:layout_marginTop="-100dp"
+                    android:alpha="0.5"
+                    android:src="@drawable/blue_circle" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/main1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mentor"
+                    android:textSize="50sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/protestriotregular"
+                    android:textColor="#5B00BCD4"/>
+
+                <TextView
+                    android:id="@+id/main2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="me"
+                    android:textSize="50sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/protestriotregular"
+                    android:textColor="#DCC60D"
+                    android:layout_marginStart="10dp"/> <!-- Add margin between "mentor" and "me" -->
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:background="@drawable/cardcorners">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Get Started!"
+                    android:textSize="30sp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Name"
+                    android:textSize="18sp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="15sp"
+                    android:hint="Enter Name"
+                    android:background="@drawable/edittext"
+                    >
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Email"
+                    android:textSize="18sp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/regemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="15sp"
+                    android:hint="Enter Email"
+                    android:background="@drawable/edittext"
+                    >
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Contact Number"
+                    android:textSize="18sp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/phoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:padding="15sp"
+                    android:hint="Enter Contact Number"
+                    android:background="@drawable/edittext"
+                    >
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Country"
+                    android:textSize="18sp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnercountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="15sp"
+                    android:background="@drawable/edittext"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="City"
+                    android:textSize="18sp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnercity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="15sp"
+                    android:background="@drawable/edittext"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Password"
+                    android:textSize="18sp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext"
+                    android:padding="15sp"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword">
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Password must be at least 8 characters long"
+                    android:textSize="12dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/signupbtn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Sign Up"
+                    android:textSize="20dp"
+                    android:textColor="#93DDFF"
+                    app:cornerRadius="15dp">
+
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an account? "
+                        android:textSize="15dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/loginlink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log in "
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#2B42C5"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

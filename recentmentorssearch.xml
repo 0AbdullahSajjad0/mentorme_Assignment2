@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="25dp"
+    android:layout_marginHorizontal="8dp"
+    android:background="#C7F4FA"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:text="Candidate Biden Called Saudi Arabia a Paeefr eefr"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="40dp"
+        android:layout_height="16dp"
+        android:src="@drawable/close_line_icon"/>
+
+</LinearLayout>

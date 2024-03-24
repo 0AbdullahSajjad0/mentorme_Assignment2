@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7F4FA"
+    tools:context=".searchpage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/firstcircle1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="-100dp"
+                android:layout_marginTop="-50dp"
+                android:alpha="0.5"
+                android:src="@drawable/blue_circle" />
+
+            <ImageView
+                android:id="@+id/secondcircle1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="-100dp"
+                android:layout_marginTop="-100dp"
+                android:layout_toEndOf="@id/firstcircle1"
+                android:alpha="0.5"
+                android:src="@drawable/blue_circle" />
+
+
+            <ImageView
+                android:id="@+id/backtohomeFromResults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/arrow_back_blue" />
+
+            <TextView
+                android:id="@+id/subHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/secondcircle1"
+                android:textSize="28dp"
+                android:text="Search Results"
+                android:textStyle="bold"
+                android:textColor="#0D5995"
+                android:layout_marginStart="35dp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/filterid"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter"
+                android:padding="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/secondcircle1"
+                >
+
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filterid"
+                android:background="#C7F4FA"
+                android:orientation="vertical">
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/resultlistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/filterid"
+                    android:layout_marginTop="20dp"
+                    android:background="#C7F4FA"
+                    tools:listitem="@layout/searchresultslist">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

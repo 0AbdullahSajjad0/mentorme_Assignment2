@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7F4FA"
+    tools:context=".searchpage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/firstcircle1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="-100dp"
+                android:layout_marginTop="-50dp"
+                android:alpha="0.5"
+                android:src="@drawable/blue_circle" />
+
+            <ImageView
+                android:id="@+id/secondcircle1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="-100dp"
+                android:layout_marginTop="-100dp"
+                android:layout_toEndOf="@id/firstcircle1"
+                android:alpha="0.5"
+                android:src="@drawable/blue_circle" />
+
+
+            <ImageView
+                android:id="@+id/backtohomeFromSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/arrow_back_blue" />
+
+            <TextView
+                android:id="@+id/subHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/secondcircle1"
+                android:textSize="28dp"
+                android:text="Let's Find..."
+                android:textStyle="bold"
+                android:textColor="#0D5995"
+                android:layout_marginStart="35dp">
+
+            </TextView>
+
+            <SearchView
+                android:id="@+id/searchbar"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subHeading"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittext"
+                android:layout_marginTop="20dp"
+                >
+
+            </SearchView>
+
+            <TextView
+                android:id="@+id/headingrecent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchbar"
+                android:text="Recent searches"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#0D5995"
+                android:padding="20dp">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recentsearchlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headingrecent"
+                android:background="#C7F4FA"
+                tools:listitem="@layout/recentmentorssearch">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/recentsearchlist"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:background="@drawable/cardcorners">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Browse Categories"
+                    android:textSize="25dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="bold"
+                    android:textColor="#0D5995">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:layout_marginTop="35dp">
+
+                    <ImageView
+                        android:id="@+id/iconentre"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/financial_growth_icon"
+                        android:layout_alignParentStart="true">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entrepreneurship"
+                        android:layout_toRightOf="@id/iconentre"
+                        android:paddingLeft="15dp"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24"
+                        android:layout_alignParentEnd="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/iconpers"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/inspiration_icon"
+                        android:layout_alignParentStart="true">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Growth"
+                        android:layout_toRightOf="@id/iconpers"
+                        android:paddingLeft="15dp"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24"
+                        android:layout_alignParentEnd="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/iconedu"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/e_learning_icon"
+                        android:layout_alignParentStart="true">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Education"
+                        android:layout_toRightOf="@id/iconedu"
+                        android:paddingLeft="15dp"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_24"
+                        android:layout_alignParentEnd="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

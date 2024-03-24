@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C7F4FA"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#C7F4FA">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/descriptioncorners">
+
+                <ImageView
+                    android:id="@+id/backtodescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/arrow_back_blue" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/greeting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hi, I'm"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="25dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Abdullah Sajjad"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="25dp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="50dp"
+                        app:cardCornerRadius="100dp"
+                        android:background="@drawable/edittextcircle">
+
+                        <ImageView
+                            android:id="@+id/profilepic"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/baseline_person_24"
+                            android:scaleType="centerCrop"/>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/white">
+
+                </View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/suggestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Drop me a review "
+                            android:textColor="@color/white"
+                            android:textSize="23dp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/suggestion"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iconImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_add_reaction_24"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feedbackbox">
+
+                    <EditText
+                        android:id="@+id/feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="top"
+                        android:hint="Type your experience..."
+                        android:layout_margin="20dp">
+                    </EditText>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/onestarrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_star_outline_24"
+                    android:padding="5dp">
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/twostarrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_star_outline_24"
+                    android:padding="5dp">
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/threestarrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_star_outline_24"
+                    android:padding="5dp">
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/fourstarrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_star_outline_24"
+                    android:padding="5dp">
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/fivestarrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_star_outline_24"
+                    android:padding="5dp">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:padding="20dp">
+
+                <Button
+                    android:id="@+id/submitfeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Feedback">
+
+                </Button>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
