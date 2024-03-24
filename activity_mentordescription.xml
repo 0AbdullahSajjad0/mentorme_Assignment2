@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C7F4FA"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#C7F4FA">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/descriptioncorners">
+
+            <ImageView
+                android:id="@+id/backtohome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/arrow_back_blue" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/greeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hi, I'm"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="25dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/mentorname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Abdullah Sajjad"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="25dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="50dp"
+                    app:cardCornerRadius="100dp"
+                    android:background="@drawable/edittextcircle">
+
+                    <ImageView
+                        android:id="@+id/mentorimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/baseline_person_24"
+                        android:scaleType="centerCrop"/>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/profession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UX Designer at"
+                        android:textColor="@color/white"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Google"
+                        android:textColor="@color/white"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp">
+
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_star_rate_24"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.8"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:layout_toEndOf="@id/iconImageView"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About me"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/mentoraboutme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="I am a passionate UX designer at Google with a focus on creating user-centric and intuitive interfaces. With 10 years of experience, I have had the opportunity to work on diverse projects that have shaped my understanding of design principles and user experience."
+                android:textColor="@color/white"
+                android:lineSpacingExtra="8dp"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/expertise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="My Expertise Include"
+                android:textStyle="bold"
+                android:textColor="#0D5995">
+
+            </TextView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/firstexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expertise"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Career Advice"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:background="#0D5995"
+                    android:padding="8dp"
+                    >
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_toRightOf="@id/firstexp"
+                android:layout_marginTop="42dp"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Experience Design"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:background="#0D5995"
+                    android:padding="8dp"
+                    >
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/thirdexp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstexp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leadership"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:background="#0D5995"
+                    android:padding="8dp"
+                    >
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_toRightOf="@id/thirdexp"
+                android:layout_below="@id/firstexp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prototyping"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:background="#0D5995"
+                    android:padding="8dp"
+                    >
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thirdexp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#FFC107"
+                app:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drop a review"
+                        android:textSize="17dp"
+                        android:textColor="#0D5995"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"/>
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/baseline_rate_review_24"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_below="@id/thirdexp"
+                android:layout_toRightOf="@id/review"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#FFC107"
+                app:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Join Community"
+                        android:textSize="17dp"
+                        android:textColor="#0D5995"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"/>
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/baseline_people_outline_24"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/booksession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/review"
+                android:layout_marginTop="20dp"
+                android:text="Book a Session">
+
+            </Button>
+
+        </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
