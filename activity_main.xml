@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#C7F4FA"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="-400dp"
+        android:alpha="0.5"
+        android:src="@drawable/blue_circle" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-450dp"
+        android:alpha="0.5"
+        android:src="@drawable/blue_circle" />
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/main1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mentor"
+            android:textSize="50sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/protestriotregular"
+            android:textColor="#5B00BCD4"/>
+
+        <TextView
+            android:id="@+id/main2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="me"
+            android:textSize="50sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/protestriotregular"
+            android:textColor="#DCC60D"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/main3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:gravity="center"
+        android:text="connect. ask. learn."
+        android:textSize="30dp"
+        android:textColor="#0D5995"/>
+
+</RelativeLayout>
