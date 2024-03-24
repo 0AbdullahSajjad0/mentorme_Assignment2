@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C7F4FA"
+    tools:context=".EditProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#93DDFF"
+            android:paddingTop="60dp"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:id="@+id/gobacktoproffromedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_back_blue"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:layout_centerHorizontal="true"
+                >
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dppicture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/babydeadpool">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Name"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="#0D5995">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/updateName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15sp"
+                android:hint="Abdullah"
+                android:background="@drawable/edittext"
+                >
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Email"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="#0D5995">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/updateEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15sp"
+                android:hint="Enter Email"
+                android:background="@drawable/edittext"
+                >
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Contact Number"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="#0D5995">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/updateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15sp"
+                android:hint="Enter Contact Number"
+                android:background="@drawable/edittext"
+                >
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Country"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="#0D5995">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/EPspinnercountry"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15sp"
+                android:background="@drawable/edittext"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="City"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="#0D5995">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/EPspinnercity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15sp"
+                android:background="@drawable/edittext"
+                />
+
+            <Button
+                android:id="@+id/updateprofbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:text="Update Profile"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                app:cornerRadius="15dp">
+
+            </Button>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
